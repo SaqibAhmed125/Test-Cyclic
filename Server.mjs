@@ -8,7 +8,7 @@ import express from 'express';
 // import path from 'path'
 // import "dotenv/config"
 const app = express()
-// const port = 400
+const port = process.env.PORT || 400
 
 // http://192.168.210.35:3000/profile
 // 404 Error
@@ -27,9 +27,9 @@ app.get('/profile', (req, res) => {
 })
 
 
-app.listen(400 || process.env.PORT, () => {
+app.listen(port, () => {
 
-    console.log("Example app listening on port 400");
+    console.log(`Example app listening on port ${port}`);
     // res.send('this is profile' + new Date());
 })
 
