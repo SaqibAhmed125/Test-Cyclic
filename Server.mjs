@@ -1,4 +1,4 @@
-console.log("This is express server hello world");
+// console.log("This is express server hello world");
 
 // it is an old code es5 common JS module
 // es Module me convert kya ja skta he.
